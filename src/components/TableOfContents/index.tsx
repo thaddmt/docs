@@ -132,7 +132,7 @@ export default function TableOfContents({ children, title }) {
             return <H2AnchorStyle key={index}>{anchor}</H2AnchorStyle>;
           else return <H3AnchorStyle key={index}>{anchor}</H3AnchorStyle>;
         })}
-        <Feedback/>
+        {/* <Feedback/> */}
       </TOCInnerStyle>
     </TOCStyle>
   );

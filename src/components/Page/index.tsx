@@ -112,18 +112,18 @@ export default function Page({
     >
       {meta
         ? metaContent({
-            title: meta.title,
-            chapterTitle: meta.chapterTitle,
-            headers,
-            children,
-            filters,
-            filterKey,
-            filterKind,
-            url,
-            directoryPath,
-            menuIsOpen,
-            setMenuIsOpen
-          })
+          title: meta.title,
+          chapterTitle: meta.chapterTitle,
+          headers,
+          children,
+          filters,
+          filterKey,
+          filterKind,
+          url,
+          directoryPath,
+          menuIsOpen,
+          setMenuIsOpen
+        })
         : children}
     </Layout>
   );
@@ -150,7 +150,7 @@ export function metaContent({
     typeof window === 'undefined'
       ? false
       : window.matchMedia(MQTabletJS).matches;
-  
+
   return (
     <>
       <Menu
@@ -187,7 +187,7 @@ export function metaContent({
           />
         </SidebarLayoutToggle>
       )}
-      <FeedbackToggle/>
+      {/* <FeedbackToggle/> */}
     </>
   );
 }
